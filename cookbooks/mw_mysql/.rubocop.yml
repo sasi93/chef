@@ -1,0 +1,11 @@
+#inherit_from: .rubocop_todo.yml
+
+Metrics/AbcSize:
+  Max: 37
+
+Metrics/MethodLength:
+  Max: 27
+
+LineLength:
+  Max: 200
+
