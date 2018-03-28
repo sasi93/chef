@@ -1,9 +1,0 @@
-language: ruby
-rvm:
-  - 2.1.5
-
-script:
-  - bundle exec foodcritic -f any . --tags ~FC017 --tags ~FC009
-  - bundle exec rubocop
-
-sudo: false
