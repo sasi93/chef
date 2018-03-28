@@ -1,0 +1,43 @@
+{
+  "name": "L7-mysql",
+  "description": "Installs/Configures MySQL server",
+  "long_description": "# L7-mysql cookbook\n[![Build Status](https://travis-ci.org/szelcsanyi/chef-mysql.svg?branch=master)](https://travis-ci.org/szelcsanyi/chef-mysql)\n[![security](https://hakiri.io/github/szelcsanyi/chef-mysql/master.svg)](https://hakiri.io/github/szelcsanyi/chef-mysql/master)\n[![Cookbook Version](https://img.shields.io/cookbook/v/L7-mysql.svg?style=flat)](https://supermarket.chef.io/cookbooks/L7-mysql)\n\n## Description\n\nInstalls/Configures [MySQL](https://www.mysql.com/) via Opscode Chef\n\n## Supported Platforms\n\n* Ubuntu 14.04+\n* Debian 7.0+\n\n## Providers\n* `L7_mysql_server` - Configures mysql instance\n\n## Usage\n### Provider parameters:\n\n* `url`: url for mysql binary tgz (default: http://www.percona.com/redir/downloads/Percona-Server-5.5/Percona-Server-5.5.30-30.1/binary/linux/x86_64/Percona-Server-5.5.30-rel30.1-465.Linux.x86_64.tar.gz)\nIt is important to define your own binary source address beacause this might be changed in future releases!\n\n* TODO\n\n#### A mysql instance with custom parameters:\n```ruby\nL7_mysql_server 'mysql-example' do\n    port '3306'\n    event_scheduler 'on'\n    innodb_file_format 'Barracuda'\n    log_warnings 1\n    bind_address '0.0.0.0'\n    default_instance true\n    innodb_buffer_pool_populate 1\nend\n```\n\n## Contributing\n\n1. Fork it\n2. Create your feature branch (`git checkout -b my-new-feature`)\n3. Commit your changes (`git commit -am 'Added some feature'`)\n4. Push to the branch (`git push origin my-new-feature`)\n5. Create new Pull Request\n\n## License\n\n* Freely distributable and licensed under the [MIT license](http://szelcsanyi.mit-license.org/2016/license.html).\n* Copyright (c) 2016 Gabor Szelcsanyi\n\n[![image](https://ga-beacon.appspot.com/UA-56493884-1/chef-mysql/README.md)](https://github.com/szelcsanyi/chef-mysql)\n",
+  "maintainer": "Gabor Szelcsanyi",
+  "maintainer_email": "szelcsanyi.gabor@gmail.com",
+  "license": "MIT",
+  "platforms": {
+    "ubuntu": "= 16.04",
+    "debian": ">= 7.0"
+  },
+  "dependencies": {
+    "cron": ">= 0.0.0"
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "1.0.11",
+  "source_url": "https://github.com/szelcsanyi/chef-mysql",
+  "issues_url": "https://github.com/szelcsanyi/chef-mysql/issues",
+  "privacy": false
+}
